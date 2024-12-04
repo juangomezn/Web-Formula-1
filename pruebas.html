@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores</title>
+    <style>
+        .contenido{
+            text-align: center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+        .primario{
+            background-color: green;
+            border: 1px solid black;
+        }
+
+        .rojo{
+            font-size: 30px;
+            color: red;
+        }
+
+        .imagenes_1{
+            width: 400px;
+        }
+
+        #titulo{
+            font-weight: bold;
+            color: white;
+            background-color: red;
+            text-align: center;
+        }
+
+        [alt]{
+            border: 1px solid green;
+        }
+
+        [class~="rojo"]{
+            background-color: blue;
+        }
+
+        [data-list~="Apple"] {
+            background-color: brown ;
+        }
+
+        [src]{
+            height: 400px;
+        }
+
+        [lang|= "es"]{
+            border: 1px dotted black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="primario">
+        <div id="titulo" data-list="Verde Apple Tree">
+            Mi Titulo
+        </div>
+        <div class="contenido">
+            Contenido
+        </div>
+        <div class="contenido rojo" data-list="Yellow Apple Tree">
+            Contenido Rojo
+        </div>
+    </div>
+    <span>Charles Leclerc</span>
+    <img class="imagenes_1" src="images/Charles_Leclerc.avif" alt="Charles Leclerc">
+    <video src="video/video.mp4" autoplay></video>
+    <div lang="es - MX  en - EN  en - US">
+        Lang 1
+    </div>
+    <div lang="en - EN  en - US">
+        Lang 2
+    </div>
+</body>
+</html>
