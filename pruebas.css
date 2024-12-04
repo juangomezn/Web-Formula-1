@@ -1,0 +1,60 @@
+.caja {
+    border-color: blue red green orange;
+    border-width: 5px;
+    border-style: outset dotted;
+}
+.caja2 {
+    border: 1px solid black;
+}
+.caja3 {
+    border-top-style: dotted;
+    border-top-color: purple;
+    border-bottom-style: dotted;
+    border-bottom-color: purple;
+}
+.contenido{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.primario{
+    background-color: green;
+    border: 1px solid black;
+}
+
+.rojo{
+    font-size: 30px;
+    color: red;
+}
+
+.imagenes_1{
+    width: 400px;
+    text-align: center;
+}
+
+#titulo{
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    text-align: center;
+}
+
+[alt]{
+    border: 1px solid green;
+}
+
+[class~="rojo"]{
+    background-color: blue;
+}
+
+[data-list~="Apple"] {
+    background-color: brown ;
+}
+
+[src]{
+    height: 400px;
+}
+
+[lang|= "es"]{
+    border: 1px dotted black;
+}
